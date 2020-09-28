@@ -13,7 +13,7 @@ class EmailAddressParser
   end
   
   def parse
-   @email_addresses = email_addresses.scan(/\w+@\w+\.\w{3}/)
+   @email_addresses = email_addresses.scan(/\w+@\w+\.\w{3}/).unique
    p @email_addresses
   end
   
